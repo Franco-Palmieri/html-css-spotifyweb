@@ -1,0 +1,111 @@
+.container-fluid{
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+main{
+}
+.content{
+    background-color: rgb(35, 35, 51);
+    overflow-y: scroll;
+    position: relative;
+}
+main{
+    height: calc(100vh - 90px);
+}
+.topbar{
+    height: 70px;
+    max-width: calc((100% / 12) * 10);
+    min-width: calc((100% / 11) * 11);
+    position: fixed;
+    top: 0;
+    background-color: rgba(39, 57, 150, 0.4);
+}
+.bottombar{
+    max-width: calc((100% / 12) * 10);
+    min-width: calc((100% / 11) * 11);
+    height: 30px;
+    border: 1px solid white;
+    position: relative;
+}
+.aside{
+    height: calc(100vh - 90px);
+    background-color: black;
+    border: 1px solid black;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-aside ul li, .middle-aside ul li, .bottom-aside ul li{
+    margin: 10px 0;
+    color: lightgray;
+    opacity: .6;
+}
+.top-aside ul li a, .middle-aside ul li a, .bottom-aside ul li a{
+    color: lightgray;
+    opacity: .6;
+}
+.icons-aside{
+    width: 20px;
+    vertical-align: middle;
+}
+.plus{
+    font-size: 35px;
+    vertical-align: middle;
+}
+.icon-bot-aside{
+    width: 15px;
+}
+.logo{
+    width: 90%;
+}
+
+.nav{
+    height: 90px;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-list-foot, .right-list-foot{
+    width: 25%;
+    border: 1px solid white;
+    display: flex;
+}
+.middle-list-foot{
+    flex-grow: 1;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.left-list-foot ul li, .middle-list-foot .pulsant ul li, .right-list-foot ul li{
+    display: inline-block;
+    margin: 0 3px;
+    color: white;
+    align-self: center;
+}
+.sinister-small{
+    width: 40px;
+    vertical-align: middle;
+}
+.description{
+    display: block;
+    color: lightgray;
+}
+.block{
+    display: flex;
+    align-items: center;
+}
+@media all and (max-width: 768px){
+    .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
+        display: none;
+    }
+}
