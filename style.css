@@ -25,12 +25,15 @@ main{
 }
 .topbar{
     height: 70px;
-    max-width: calc((100% / 12) * 10);
-    min-width: calc((100% / 11) * 11);
+    /* max-width: calc((100% / 12) * 11); */
+    /* min-width: calc((100% / 11) * 10);  */
     position: fixed;
     top: 0;
     background-color: rgba(11, 14, 31, 0.4);
     background-color: pink;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
 }
 .botton-topbar{
 }
@@ -264,9 +267,12 @@ main{
 }
 
 
-@media all and (max-width: 768px){
+@media all and (max-width: 770px){
     .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
         display: none;
+    }
+    .topbar{
+        width: calc((100% / 12) * 10);
     }
     .icons-song{
         flex-direction: column;
@@ -278,5 +284,16 @@ main{
 @media all and (max-width: 1160px){
     .box-container{
         justify-content: flex-start;
+    }
+}
+@media all and (max-width: 576px){
+    .topbar{
+        width: calc((100% / 12) * 11); 
+    }
+
+}
+@media all and (min-width: 577px){
+    .topbar{
+        width: calc((100% / 12) * 10);
     }
 }
