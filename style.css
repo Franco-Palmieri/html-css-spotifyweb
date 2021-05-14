@@ -42,6 +42,7 @@ main{
     min-width: calc((100% / 11) * 11);
     border: 1px solid red;
     color: white;
+    padding: 15px;
 }
 .bottombar ul li a{
     color: lightgray;
@@ -49,9 +50,14 @@ main{
 }
 .box-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     color: white;
+    border: 1px solid green;
+}
+.box-container-2{
+    display: flex;
+    justify-content: flex-start;
     border: 1px solid green;
 }
 .box{
@@ -199,9 +205,6 @@ main{
     }
     .aside{
         justify-content: space-between;
-    }
-    .box-container{
-        justify-content: flex-start;
     }
 }
 @media all and (max-width: 1160px){
