@@ -28,9 +28,37 @@ main{
 .bottombar{
     max-width: calc((100% / 12) * 10);
     min-width: calc((100% / 11) * 11);
-    height: 30px;
     border: 1px solid white;
-    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.bottombar ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contenitore{
+    max-width: calc((100% / 12) * 10);
+    min-width: calc((100% / 11) * 11);
+    border: 1px solid red;
+    color: white;
+}
+.bottombar ul li a{
+    color: lightgray;
+    padding: 0 10px;
+}
+.box-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    border: 1px solid green;
+}
+.box{
+    width: 150px;
+    height: 200px;
+    border: 1px solid white;
+    margin: 5px;
 }
 .aside{
     height: calc(100vh - 90px);
@@ -65,7 +93,6 @@ main{
 .logo{
     width: 90%;
 }
-
 .nav{
     height: 90px;
     background-color: rgb(44, 44, 44);
@@ -169,5 +196,16 @@ main{
     }
     .icons-song{
         flex-direction: column;
+    }
+    .aside{
+        justify-content: space-between;
+    }
+    .box-container{
+        justify-content: flex-start;
+    }
+}
+@media all and (max-width: 1160px){
+    .box-container{
+        justify-content: flex-start;
     }
 }
