@@ -73,43 +73,69 @@ main{
     justify-content: space-between;
     align-items: center;
 }
-.left-list-foot, .right-list-foot{
+.left-footer, .center-footer, .right-footer{
     border: 1px solid white;
-    display: flex;
+    color: white;
 }
-.middle-list-foot{
+.left-footer, .right-footer{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.center-footer{
     flex-grow: 1;
+}
+.sinister-small{
+    width: 30%;
     border: 1px solid red;
+}
+.sinister-small img{
+    width: 100%;
+}
+.name-song{
+    width: 40%;
+    padding: 0 10px;
+    border: 1px solid red;
+}
+.name-song h2{
+    font-size: 10px;
+}
+.name-song .description{
+    font-size: 8px;
+    line-height: 1.4;
+}
+.icons-song{
+    width: 30%;
+    display: flex;
+    border: 1px solid red;
+}
+.icons-song .icons-box{
+    padding: 0 10px;
+}
+.controller-vol{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: white;
+    text-align: center;
 }
-.left-list-foot ul li, .middle-list-foot .pulsant ul li, .right-list-foot ul li{
-    display: inline-block;
-    margin: 0 5px;
-    color: white;
-    align-self: center;
-}
-.right-list-foot{
- display: flex;
- justify-content: center;
-}
-.sinister-small{
-    width: 40px;
-    vertical-align: middle;
-}
-.description{
-    display: block;
-    color: lightgray;
-}
-.block{
+.controller{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 25px;
 }
+.icon-control{
+    padding: 0 5px;
+
+}
+
+
 @media all and (max-width: 768px){
     .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
         display: none;
+    }
+    .icons-song{
+        flex-direction: column;
     }
 }
