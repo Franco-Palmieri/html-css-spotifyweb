@@ -185,7 +185,7 @@ main{
     justify-content: space-around;
 }
 .center-footer{
-    flex-grow: 1;
+    width: 60%;
 }
 .center-footer .icon-control a{
     color: white;
@@ -239,7 +239,7 @@ main{
 }
 .minuts{
     width: 10%;
-    font-size: 15px;
+    font-size: 10px;
 }
 .vol-center{
     width: 90%;
@@ -255,15 +255,25 @@ main{
 .icons-item{
     padding: 0 5px;
 }
-.vol-right{
-    width: 70%;
-}
 .icons-right, .vol-right{
     border: 1px solid red;
+}
+.right-footer ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.right-footer{
+}
+.right-footer ul li{
+    padding: 0 5px;
+}
+.vol-flex{
+    display: flex;
 }
 .vol-2{
     border-bottom: 5px solid lightgray;
     flex-basis: 100%;
+    display: flex;
 }
 .big-logo{
     display: block;
