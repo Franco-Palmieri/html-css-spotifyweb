@@ -12,6 +12,7 @@ main{
     background-color: rgb(35, 35, 51);
     overflow-y: scroll;
     position: relative;
+    padding-top: 70px;
 }
 main{
     height: calc(100vh - 90px);
@@ -73,12 +74,11 @@ main{
     align-items: center;
 }
 .left-list-foot, .right-list-foot{
-    width: 30%;
     border: 1px solid white;
     display: flex;
 }
 .middle-list-foot{
-    width: 40%;
+    flex-grow: 1;
     border: 1px solid red;
     display: flex;
     flex-direction: column;
@@ -88,12 +88,16 @@ main{
 }
 .left-list-foot ul li, .middle-list-foot .pulsant ul li, .right-list-foot ul li{
     display: inline-block;
-    margin: 0 3px;
+    margin: 0 5px;
     color: white;
     align-self: center;
 }
+.right-list-foot{
+ display: flex;
+ justify-content: center;
+}
 .sinister-small{
-    width: 100%;
+    width: 40px;
     vertical-align: middle;
 }
 .description{
