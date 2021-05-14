@@ -68,7 +68,7 @@ main{
 
 .nav{
     height: 90px;
-    background-color: darkgrey;
+    background-color: rgb(44, 44, 44);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,12 +106,12 @@ main{
     line-height: 1.4;
 }
 .icons-song{
-    width: 30%;
+    width: 20%;
     display: flex;
     border: 1px solid red;
 }
 .icons-song .icons-box{
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .controller-vol{
     display: flex;
@@ -122,12 +122,44 @@ main{
 .controller{
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
     font-size: 25px;
 }
 .icon-control{
     padding: 0 5px;
 
+}
+.bot-controller{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.minuts{
+    width: 10%;
+    font-size: 15px;
+}
+.vol-center{
+    width: 90%;
+}
+.vol-center-item{
+    border-bottom: 5px solid lightgray;
+    width: 100%;
+}
+.icons-right{
+    width: 30%;
+    display: flex;
+}
+.icons-item{
+    padding: 0 5px;
+}
+.vol-right{
+    width: 70%;
+}
+.icons-right, .vol-right{
+    border: 1px solid red;
+}
+.vol-2{
+    border-bottom: 5px solid lightgray;
+    flex-basis: 100%;
 }
 
 
