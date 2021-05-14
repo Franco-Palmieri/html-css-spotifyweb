@@ -35,8 +35,6 @@ main{
     display: flex;
     align-items: center;
 }
-.botton-topbar{
-}
 .botton-topbar a{
     border: 1px solid white;
     border-radius: 100px;
@@ -52,11 +50,13 @@ main{
     border: 1px solid white;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 .bottombar ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-weight: bold;
 }
 .contenitore{
     max-width: calc((100% / 12) * 10);
@@ -128,7 +128,7 @@ main{
 }
 .title-picture{
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     padding: 7px;
 }
 .subtitle{
@@ -168,7 +168,7 @@ main{
     width: 15px;
 }
 .logo{
-    width: 90%;
+
 }
 .nav{
     height: 90px;
@@ -265,9 +265,19 @@ main{
     border-bottom: 5px solid lightgray;
     flex-basis: 100%;
 }
-
+.big-logo{
+    display: block;
+    min-width: 20px;
+}
+.little-logo{
+    display: none;
+    
+}
 
 @media all and (max-width: 770px){
+    .aside{
+        padding: 5px;
+    }
     .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
         display: none;
     }
@@ -277,9 +287,13 @@ main{
     .icons-song{
         flex-direction: column;
     }
-    .aside{
-        justify-content: space-between;
+    .big-logo{
+        display: none;
     }
+    .little-logo{
+        display: block;
+        display: block;
+        min-width: 20px;
 }
 @media all and (max-width: 1160px){
     .box-container{
