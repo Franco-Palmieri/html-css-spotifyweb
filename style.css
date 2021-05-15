@@ -27,13 +27,14 @@ main{
     height: 70px;
     /* max-width: calc((100% / 12) * 11);
     min-width: calc((100% / 11) * 10);  */
+    width: 100%;
     position: fixed;
     top: 0;
     background-color: rgba(11, 14, 31, 0.4);
-    background-color: pink;
     justify-content: flex-end;
     display: flex;
     align-items: center;
+    padding-right: 20px;
 }
 .botton-topbar a{
     border: 1px solid white;
@@ -71,7 +72,7 @@ main{
 }
 .box-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     color: white;
     border: 1px solid green;
@@ -318,6 +319,10 @@ main{
         display: block;
         display: block;
         min-width: 20px;
+    }
+    /* .box-container{
+        justify-content: flex-start;
+    } */
 }
 @media all and (max-width: 1160px){
     .box-container{
@@ -325,18 +330,12 @@ main{
     }
 }
 @media all and (max-width: 576px){
-    /* .topbar{
-        width: calc((100% / 12) * 11); 
-    } */
     .box-container{
         justify-content: flex-start;
     }
 
 }
 @media all and (min-width: 577px){
-    /* .topbar{
-        width: calc((100% / 12) * 10);
-    } */
     .box-container{
         justify-content: flex-start;
     }
