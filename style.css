@@ -146,14 +146,16 @@ main{
 .logo{
     width: 100%;
 }
-.top-aside ul li, .middle-aside ul li, .bottom-aside ul li{
+.top-aside ul li, .middle-aside ul li, .bottom-aside div a{
     margin: 10px 0;
     color: rgb(211, 211, 211, .7);
 }
-.top-aside ul li a, .middle-aside ul li a, .bottom-aside ul li a{
+.top-aside ul li a, .middle-aside ul li a, .bottom-aside div a{
     color: rgb(211, 211, 211, .7);
 }
-
+.bottom-aside{
+    width: 100%;
+}
 .icons-aside{
     width: 20px;
     vertical-align: middle;
@@ -164,6 +166,12 @@ main{
 }
 .icon-bot-aside{
     width: 15px;
+}
+.linea-aside{
+    margin: 10px 0;
+    width: 100%;
+    background-color: lightgray;
+    height: 1px;
 }
 .nav{
     height: 90px;
@@ -297,7 +305,7 @@ main{
     color: white;
     opacity: 1;
 }
-.bottom-aside ul li a:hover{
+.bottom-aside div a:hover{
     color: white;
 }
 
@@ -318,6 +326,14 @@ main{
     }
     .top-aside{
         height: calc(100% - 125px);
+    }
+    .linea-aside{
+        display: none;
+    }
+    .bottom-bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 }
