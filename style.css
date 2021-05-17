@@ -158,7 +158,10 @@ main{
 }
 .icons-aside{
     width: 20px;
-    vertical-align: middle;
+}
+.profile{
+    background-color: rgb(121, 121, 121);
+    border-radius: 50%;
 }
 .plus{
     font-size: 35px;
@@ -314,6 +317,9 @@ main{
 @media screen and (max-width: 991px){
     .top-aside ul li a, .middle-aside, .aside .bottom-aside div a{
         display: none;
+    }
+    .bottom-aside{
+        text-align: center;
     }
     .box-container{
         flex-wrap: wrap;
