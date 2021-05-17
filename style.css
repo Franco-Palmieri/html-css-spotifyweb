@@ -219,6 +219,10 @@ main{
 .icons-song .icons-box{
     padding: 0 5px;
 }
+.icons-box a, .right-footer li a{
+    color: white;
+    text-decoration: none;
+}
 .controller-vol{
     display: flex;
     flex-direction: column;
@@ -235,9 +239,6 @@ main{
     padding: 0 5px;
 
 }
-/* .icon-play{
-    font-size: 30px;
-} */
 .bot-controller{
     display: flex;
     justify-content: space-around;
@@ -278,7 +279,7 @@ main{
     display: flex;
     height: 5px;
     align-self: center;
-    margin: 0 15px;
+    margin: 0 5px;
 }
 .big-logo{
     display: block;
