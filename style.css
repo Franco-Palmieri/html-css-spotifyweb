@@ -59,8 +59,8 @@ main{
     font-weight: bold;
 }
 .contenitore{
-    max-width: calc((100% / 12) * 10);
-    min-width: calc((100% / 11) * 11);
+    /* max-width: calc((100% / 12) * 10);
+    min-width: calc((100% / 11) * 11); */
     color: white;
     padding: 15px;
 }
@@ -169,7 +169,7 @@ main{
     height: 90px;
     background-color: rgb(44, 44, 44);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .left-footer, .center-footer, .right-footer{
@@ -300,35 +300,8 @@ main{
 .bottom-aside ul li a:hover{
     color: white;
 }
-@media all and(max-width: 991px){
-    .box-container{
-        flex-wrap: wrap;
-    }
-    .box{
-        width: calc(100% / 4 - 15px);
-    }
-    .aside{
-        align-items: center;
-    }
-    .top-aside{
-        height: calc(100% - 125px);
-    }
-    .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
-        display: none;
-    }
-    .big-logo{
-        display: none;
-    }
-    .little-logo{
-        display: block;
-        display: block;
-    }
-    
-}
-@media all and (max-width: 576px){
-    .top-aside{
-        height: calc(100% - 125px);
-    }
+
+@media screen and (max-width: 576px){
     .controller-vol{
         font-size: 20px;
     }
@@ -341,15 +314,22 @@ main{
     }
     .aside{
         align-items: center;
-        padding: 0;
+        padding: 5px;
     }
-    .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
-        display: none;
-    }
-}
-@media only screen and (max-width: 768px){
     .top-aside{
         height: calc(100% - 125px);
+    }
+    
+}
+@media only screen and (max-width: 767px){
+    .top-aside{
+        height: calc(100% - 125px);
+    }
+    .box-container{
+        /* flex-wrap: wrap; */
+    }
+    .box{
+        width: calc(100% / 2 - 15px);
     }
     .big-logo{
         display: none;
@@ -362,24 +342,29 @@ main{
         align-items: center;
         padding: 0;
     }
+    
+}
+@media screen and (max-width: 991px){
     .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
         display: none;
     }
-
-}
-/* @media all and (max-width: 1160px){
     .box-container{
-        justify-content: flex-start;
+        flex-wrap: wrap;
     }
+    .box{
+        width: calc(100% / 4 - 15px);
+    }
+    .aside{
+        align-items: center;
+    }
+    .top-aside{
+        height: calc(100% - 125px);
+    }
+    .big-logo{
+        display: none;
+    }
+    .little-logo{
+        display: block;
+    }
+    
 }
-@media all and (max-width: 576px){
-    .box-container{
-        justify-content: flex-start;
-    }
-
-}
-@media all and (min-width: 577px){
-    .box-container{
-        justify-content: flex-start;
-    }
-} */
