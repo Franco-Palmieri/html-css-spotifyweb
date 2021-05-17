@@ -70,20 +70,20 @@ main{
 }
 .box-container{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     color: white;
+    border: 1px solid white;
 }
 .box-container-2{
     display: flex;
     justify-content: flex-start;
 }
 .box{
-    width: 180px;
-    height: 230px;
-    margin: 5px;
-    flex-direction: column;
-    display: flex;
+    width: calc(100% / 6 - 15px);
+    /* width: 180px; */
+    /* height: 230px; */
+    margin-right:  15px;
+    /* flex-direction: column; */
+    /* display: flex; */
     align-items: center;
 }
 .box div a{
@@ -92,7 +92,7 @@ main{
 }
 .box-picture{
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
     position: relative;
 }
 .play{
@@ -129,17 +129,22 @@ main{
     color: lightgray;
     opacity: .6;
     font-size: 10px;
+    text-align: center;
 }
 .aside{
     height: calc(100vh - 90px);
     background-color: black;
     border: 1px solid black;
+    align-items: flex-start;
     padding: 15px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: hidden;
+}
+.logo{
+    width: 100%;
 }
 .top-aside ul li, .middle-aside ul li, .bottom-aside ul li{
     margin: 10px 0;
@@ -148,6 +153,7 @@ main{
 .top-aside ul li a, .middle-aside ul li a, .bottom-aside ul li a{
     color: rgb(211, 211, 211, .7);
 }
+
 .icons-aside{
     width: 20px;
     vertical-align: middle;
@@ -158,9 +164,6 @@ main{
 }
 .icon-bot-aside{
     width: 15px;
-}
-.logo{
-
 }
 .nav{
     height: 90px;
@@ -239,10 +242,6 @@ main{
 .vol-center{
     width: 90%;
 }
-.vol-center-item{
-    border-bottom: 5px solid lightgray;
-    width: 100%;
-}
 .icons-right{
     width: 30%;
     display: flex;
@@ -253,6 +252,7 @@ main{
 
 .right-footer ul{
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
 }
 .right-footer{
@@ -262,11 +262,15 @@ main{
 }
 .vol-flex{
     display: flex;
+    flex-basis: 100%;
 }
-.vol-2{
-    border-bottom: 5px solid lightgray;
+.vol-2, .vol-center-item{
+    background-color: lightgray;
     flex-basis: 100%;
     display: flex;
+    height: 5px;
+    align-self: center;
+    margin: 0 15px;
 }
 .big-logo{
     display: block;
@@ -296,15 +300,21 @@ main{
 .bottom-aside ul li a:hover{
     color: white;
 }
-@media all and (max-width: 770px){
+@media all and(max-width: 991px){
+    .box-container{
+        flex-wrap: wrap;
+    }
+    .box{
+        width: calc(100% / 4 - 15px);
+    }
     .aside{
-        padding: 5px;
+        align-items: center;
+    }
+    .top-aside{
+        height: calc(100% - 125px);
     }
     .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
         display: none;
-    }
-    .icons-song{
-        flex-direction: column;
     }
     .big-logo{
         display: none;
@@ -312,13 +322,52 @@ main{
     .little-logo{
         display: block;
         display: block;
-        min-width: 20px;
     }
-    /* .box-container{
-        justify-content: flex-start;
-    } */
+    
 }
-@media all and (max-width: 1160px){
+@media all and (max-width: 576px){
+    .top-aside{
+        height: calc(100% - 125px);
+    }
+    .controller-vol{
+        font-size: 20px;
+    }
+    .big-logo{
+        display: none;
+    }
+    .little-logo{
+        display: block;
+        display: block;
+    }
+    .aside{
+        align-items: center;
+        padding: 0;
+    }
+    .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px){
+    .top-aside{
+        height: calc(100% - 125px);
+    }
+    .big-logo{
+        display: none;
+    }
+    .little-logo{
+        display: block;
+        display: block;
+    }
+    .aside{
+        align-items: center;
+        padding: 0;
+    }
+    .top-aside ul li a, .middle-aside, .aside .bottom-aside ul li a{
+        display: none;
+    }
+
+}
+/* @media all and (max-width: 1160px){
     .box-container{
         justify-content: flex-start;
     }
@@ -333,4 +382,4 @@ main{
     .box-container{
         justify-content: flex-start;
     }
-}
+} */
