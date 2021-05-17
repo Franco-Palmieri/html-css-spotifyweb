@@ -202,14 +202,14 @@ main{
     width: 30%;
 }
 .sinister-small img{
-    width: 100%;
+    width: 80%;
 }
 .name-song{
     width: 40%;
-    padding: 0 10px;
 }
 .name-song h2{
-    font-size: 10px;
+    font-size: 15px;
+    padding: 5px 0;
 }
 .name-song .description{
     font-size: 8px;
@@ -250,9 +250,27 @@ main{
     width: 10%;
     font-size: 10px;
 }
-.vol-center{
-    width: 90%;
+.vol-2{
+    display: flex;
+    text-align: center;
 }
+.vol-center{
+    width: 70%;
+    display: flex;
+}
+.vol-attivo{
+    background-color:lightgray;
+    width: 30%;
+}
+.regolatore-vol{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(236, 227, 227);
+    border-radius: 100px;
+    align-self: center;
+    display: none;
+}
+
 .icons-right{
     width: 30%;
     display: flex;
@@ -260,7 +278,6 @@ main{
 .icons-item{
     padding: 0 5px;
 }
-
 .right-footer ul{
     display: flex;
     width: 100%;
@@ -274,7 +291,7 @@ main{
     flex-basis: 100%;
 }
 .vol-2, .vol-center-item{
-    background-color: lightgray;
+    background-color: rgb(92, 91, 91);
     flex-basis: 100%;
     display: flex;
     height: 5px;
@@ -288,6 +305,7 @@ main{
 .little-logo{
     display: none;
 }
+
 /* hover  */
 .box:hover .play{
     opacity: 1;
@@ -308,6 +326,12 @@ main{
 }
 .bottom-aside div a:hover{
     color: white;
+}
+.vol-center-item:hover .regolatore-vol, .vol-2:hover .regolatore-vol{
+    display: block;
+}
+.vol-attivo:hover{
+    background-color: greenyellow;
 }
 
 
@@ -408,5 +432,10 @@ main{
         padding-right: 12px;
         font-size: 20px;
     }
-    
+    .sinister-small img {
+        width: 100%;
+    }
+    .name-song h2 {
+        font-size: 10px;
+    }
 }
